@@ -4,12 +4,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
     <title>
-        用ZeroClipboard实现网站内容复制粘贴JS特效
+        鐢╖eroClipboard瀹炵幇缃戠珯鍐呭澶嶅埗绮樿创JS鐗规晥
     </title>
-    <meta name="Keywords" content="用ZeroClipboard实现网站内容复制粘贴JS特效,Jquery插件,Jquery原创,Jquery资源,Jquery特效,div+css,JquerySchool"
-        />
-    <meta name="description" content="JquerySchool是一个专门分享jquery资源、jquery插件、jquery特效的一个网站,完全开放源代码,把实际开发中应用最多、最实用的Jquery资源抽取出来再加以精心编排,让广大网友能以最短的时间、花最少的精力去真正掌握jQuery开发的知识。"
-        />
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
     <script type="text/javascript" src="ZeroClipboard.js">
     </script>
@@ -21,15 +17,15 @@
             }
             (function init() {
                 clip = new ZeroClipboard.Client();
-                clip.setHandCursor(true); //鼠标手势
+                clip.setHandCursor(true); //榧犳爣鎵嬪娍
                 clip.addEventListener('mouseOver',function(client) {
-                        clip.setText($('fe_text').value); //输入框内容
+                        clip.setText($('fe_text').value); //杈撳叆妗嗗唴瀹�
                     });
                 clip.addEventListener('complete',function(client, text) {
-                        //alert("复制成功");
+                        //alert("澶嶅埗鎴愬姛");
                     });
-                clip.glue('clip_button'); //情况1
-//                clip.glue('clip_button', 'clip_container'); //情况2
+                clip.glue('clip_button'); //鎯呭喌1
+//                clip.glue('clip_button', 'clip_container'); //鎯呭喌2
             })();
         })
     </script>
@@ -41,17 +37,17 @@
 <body>
 <div style="width:560px; height:auto; margin:150px auto;">
       <textarea style="width: 550px; height:80px;" name=urlName id="fe_text">
-        JquerySchool提供了一个让网友们为共同进步这一个目标出发，互相学习，互相帮助，取人之长，补已之短，共同进步的网站平台，想学习Jquery技术的朋友去看一下哦：http://www.jq-school.com
+        text
       </textarea>
     <br />
-    <!--情况1-->
+    <!--鎯呭喌1-->
     <button id="clip_button" style="width:128px;height:32px;line-height:26px;font:16px arial;">
-        点击复制
+        鐐瑰嚮澶嶅埗
     </button>
-    <!--情况2-->
+    <!--鎯呭喌2-->
       <!--<span id="clip_container">-->
         <!--<button id="clip_button" style="width:128px;height:32px;line-height:26px;font:16px arial;">-->
-            <!--点击复制分享-->
+            <!--鐐瑰嚮澶嶅埗鍒嗕韩-->
         <!--</button>-->
       <!--</span>-->
 </div>
